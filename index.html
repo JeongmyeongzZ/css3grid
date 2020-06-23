@@ -1,44 +1,137 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    </head>
-    <body>
-         <header>
-             헤더
-             <nav>
-                 <ul>
-                     <li>
-                         nav menu
-                     </li>
-                 </ul>
-             </nav>
-             <aside>
-                 something side
-             </aside>
-         </header>
-         <main>
-             <section>
-                 <article>
-                     <header>
-                         <h1>제목</h1>
-                     </header>
-                     <p>
-                         something
-                     </p>
-                     <footer>
-                         뭐 다른내용
-                     </footer>
-                 </article>
-             </section>
-             메인내용
-         </main>
-         <footer>
-             참고 링크
-             https://m.blog.naver.com/PostView.nhn?blogId=pjh445&logNo=220016176650&proxyReferer=https:%2F%2Fwww.google.com%2F
-             https://velog.io/@apricotsoul/HTML-section%EC%9A%94%EC%86%8C-main-%EC%9A%94%EC%86%8C
-             https://www.youtube.com/watch?v=eprXmC_j9A4
-         </footer>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #container {
+            display: grid;
+            grid-gap: 1rem;
+        }
+
+        #container > * {
+            background-color: red;
+        }
+
+        #container .skill__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 0.5rem;
+        }
+
+        .skill__wrapper article {
+            background-color: blue;
+        }
+
+        #theme {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1rem;
+        }
+        #theme > h1 {
+            grid-column: 1/4;
+            background-color: antiquewhite;
+        }
+        #theme > article {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<header>
+    헤더
+    <nav>
+        <ul>
+            <li>
+                nav menu
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="container">
+    <div>
+        slide section
+    </div>
+    <div class="skill__wrapper">
+        <article>
+            <aside>
+                left image section
+            </aside>
+            <h1>something title</h1>
+            <p>
+                something
+            </p>
+        </article>
+        <article>
+            <aside>
+                left image section
+            </aside>
+            <h1>something title</h1>
+            <p>
+                something
+            </p>
+        </article>
+        <article>
+            <aside>
+                left image section
+            </aside>
+            <h1>something title</h1>
+            <p>
+                something
+            </p>
+        </article>
+    </div>
+    <section id="theme">
+        <h1>section title</h1>
+        <article>
+            <h1>제목</h1>
+            <p>
+                something
+            </p>
+        </article>
+        <article>
+            <h1>제목</h1>
+            <p>
+                something
+            </p>
+        </article>
+        <article>
+            <h1>제목</h1>
+            <p>
+                something
+            </p>
+        </article>
+        <article>
+            <h1>제목</h1>
+            <p>
+                something
+            </p>
+        </article>
+        <article>
+            <h1>제목</h1>
+            <p>
+                something
+            </p>
+        </article>
+        <article>
+            <h1>제목</h1>
+            <p>
+                something
+            </p>
+        </article>
+        <article>
+            <h1>제목</h1>
+            <p>
+                something
+            </p>
+        </article>
+    </section>
+</main>
+<footer>
+    참고 링크
+    https://m.blog.naver.com/PostView.nhn?blogId=pjh445&logNo=220016176650&proxyReferer=https:%2F%2Fwww.google.com%2F
+    https://velog.io/@apricotsoul/HTML-section%EC%9A%94%EC%86%8C-main-%EC%9A%94%EC%86%8C
+    https://www.youtube.com/watch?v=eprXmC_j9A4
+</footer>
+</body>
 </html>
