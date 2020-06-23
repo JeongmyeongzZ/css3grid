@@ -4,34 +4,18 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        #container {
-            display: grid;
-            grid-gap: 1rem;
-        }
-
         #container > * {
             background-color: red;
-        }
-
-        #container .skill__wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 0.5rem;
         }
 
         .skill__wrapper article {
             background-color: blue;
         }
 
-        #theme {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 1rem;
-        }
         #theme > h1 {
-            grid-column: 1/4;
             background-color: antiquewhite;
         }
+
         #theme > article {
             background-color: aquamarine;
         }
@@ -48,11 +32,11 @@
         </ul>
     </nav>
 </header>
-<main id="container">
+<main id="container" class="grid gap-4">
     <div>
         slide section
     </div>
-    <div class="skill__wrapper">
+    <div class="skill__wrapper grid grid-cols-3 gap-2">
         <article>
             <aside>
                 left image section
@@ -81,8 +65,8 @@
             </p>
         </article>
     </div>
-    <section id="theme">
-        <h1>section title</h1>
+    <section id="theme" class="grid grid-cols-3 gap-2">
+        <h1 class="col-span-3">section title</h1>
         <article>
             <h1>제목</h1>
             <p>
