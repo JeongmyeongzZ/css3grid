@@ -44,6 +44,27 @@ main {
     padding-top: var(--main-padding);
 }
 
+article {
+    background-color: #4ed4ff;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(200px, 1fr);
+    grid-template-areas:
+    "title description"
+    "title footer";
+}
+
+article h1 {
+    grid-area: title;
+}
+
+article p {
+    grid-area: description;
+}
+
+article div {
+    grid-area: footer;
+}
+
 aside {
     background: #18ffff;
     grid-area: sidebar;
@@ -91,5 +112,13 @@ footer {
             "content2"
             "content3"
             "footer";
+    }
+
+    article {
+        background-color: #4ed4ff;
+        display: grid;
+        grid-template-areas:
+        "title footer"
+        "title description";
     }
 }
